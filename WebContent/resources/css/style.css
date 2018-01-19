@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,700,900,900i');
+
+/* ta */
+
+#ta { border: 1px solid black }		
+td { align: center }
+
+/* Everything */
+
+* {
+	/* font-family: 'Muli', sans-serif; */
+	/* color: #333 */
+}
+
+/* Sticky footer */
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 80px !important; /* Margin bottom by footer height */ /* + 20px */
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Set the fixed height of the footer here */
+	line-height: 60px; /* Vertically center the text there */
+	background-color: #f5f5f5;
+}
+
+/* Recoloring Bootstrap elements */
+
+.btn-primary {
+	background-color: #d16548 !important;
+	border-color: #d16548 !important;
+	cursor: pointer;
+}
+
+.btn-primary:active, .btn-primary:hover {
+	background-color: #be573c !important;
+	border-color: #be573c !important;
+}
+
+.jumbotron {
+	background-color: #f5efd0 !important;
+}
+
+/* Navbar */
+
+nav {
+	/*height: 140px;*/
+	line-height: 140px;
+
+	background-image: url('../img/navbg.jpg');
+	background-size: 100%;
+	background-color: #f0eaca;
+	background-repeat: no-repeat;
+	padding: 0 !important;
+	margin-bottom: 1rem;
+}
+
+.navbar-brand {
+	background: #fbf5d7;
+	color: #a08f5c;
+	padding: 0 3rem !important;
+	font-family: 'AkzidenzGroteskPro-MdEx' !important;
+	text-transform: uppercase;
+}
+
+.navbar-brand .alt {
+	color: #d16548;
+}
+
+.navbar-brand:hover {
+	background: #fbf5d7;
+	color: #a08f5c;
+}
+
+#navbarNav li {
+	background: #2d2d28;
+	color: #a08f5c;
+	text-transform: lowercase;
+	font-family: 'AkzidenzGroteskPro-Ext' !important;
+	font-size: .8rem;
+	text-align: center;
+}
+
+.nav-link {
+	padding: 0 1rem !important;
+	color: #d16548;
+}
+
+.nav-link:hover {
+	background: #d16548;
+	color: #2d2d28;
+}
+
+.navbar-toggler {
+	/*border: 2px solid rgba(160, 143, 92, .7) !important;*/
+	background-color: #fbf5d7 !important;
+	margin-right: 2rem;
+	margin: 20px;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(160, 143, 92, .7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Titles */
+
+h1.title {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+	h1.title a {
+		text-decoration: none;
+	}
+
+h2, h3 {
+	font-weight: 300;
+}
+
+/* Flights table */
+
+table.flights {
+	border-collapse: collapse;
+}
+
+table.flights th {
+	background: #e9e99f;
+}
+th, td {
+    padding: 15%;
+    text-align: left;
+}
+table.flights tr:nth-child(odd) {
+	background: #fafaf2;
+}
+	
+table.flights tr:not(:first-child):hover {
+	background: #c4eafb;
+}
+	
+	table.flights, table.flights th, table.flights td {
+		border: 1px solid #acac6c;
+		padding: 10px;
+	}
